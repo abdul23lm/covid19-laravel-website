@@ -1,0 +1,543 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background-color: #fff;
+  font-family: 'Assistant', sans-serif;
+  color: #57A0D2;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #E75221;
+  border-top-color: #F9A280;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #E75221;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #F9A280;
+  color: #fff;
+}
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.btn-navbar-right {
+  margin-top: -10px !important;
+  margin-bottom: -8px !important;
+  margin-right: -18px !important;
+
+  height: 70px;
+  border-radius: 0;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: #57A0D2;
+
+      &.active {
+        font-weight: bold;
+        color: #277BB5 !important;
+      }
+      &:hover {
+        border-radius: 20px;
+        background-color: #E75221;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn-home {
+  background-color: #57A0D2;
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:hover {
+    background-color: #277BB5;
+    color: #fff;
+  }
+}
+
+.section-header {
+  margin-top: 50px;
+
+  .header-text {
+    padding-top: 133px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #E75221;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 36px;
+    background-color: #E75221;
+    color: #fff;
+  }
+
+  .btn-about-covid {
+    border-radius: 22px;
+    background-color: #57a0d2;
+    color: #fff;
+    font-size: 20px;
+    &:hover {
+      border-radius: 20px;
+      background-color: #277BB5;
+      color: #fff;
+    }
+  }
+  img {
+    float: right;
+  }
+}
+
+.section-data {
+  margin-top: 50px;
+
+  .section-data-heading {
+    h2 {
+      font-family: 'Assistant', sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      color: #E75221;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    -webkit-transition-delay: 0 !important;
+            transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Data Content
+--------------------------------------------------------------*/
+
+.section-data-content {
+
+  .info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 50px;
+    background-color: #E75221;
+    padding: 10px;
+
+    h4 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 5px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 25px;
+      margin-top: 5px;
+      color: #fff;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.section-about-covid {
+  margin-top: 100px;
+
+  .img-about {
+    max-width: 100%;
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #E75221;
+  }
+
+  p {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .img-china {
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Penyebaran
+--------------------------------------------------------------*/
+
+.section-penyebaran-covid {
+  margin-top: 50px;
+
+  h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #E75221;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  ul {
+    font-size: 25px;
+  }
+
+  .img-penyebaran {
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Pencegahan
+--------------------------------------------------------------*/
+
+.section-pencegahan-covid {
+  margin-top: 50px;
+
+  .img-pencegahan {
+    max-width: 100%;
+  }
+
+  .pencegahan {
+    margin-top: 50px;
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #E75221;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  table {
+    height: 300px;
+    width: 400px;
+
+    td {
+      font-size: 20px;
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Gejala
+--------------------------------------------------------------*/
+
+
+.section-gejala-heading {
+  margin-top: 50px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #E75221;
+  }
+}
+
+.section-gejala-content {
+  .section-gejala-covid {
+
+    .card-covid {
+      min-height: 332px;
+      background: #57A0D2;
+      color: #fff;
+      padding: 30px;
+      background-size: cover;
+      margin-top: 50px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.16);
+
+
+      .covid-gejala {
+        font-size: 30px;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Hotline
+--------------------------------------------------------------*/
+
+
+.section-hotline-covid {
+  margin-top: 50px;
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #E75221;
+  }
+
+  .covid-hotline {
+    margin-top: 170px;
+  }
+
+  .btn-telp-covid {
+    border-radius: 22px;
+    background-color: #57a0d2;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .img-hotline {
+    max-width: 100%;
+  }
+
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.section-team {
+  margin-top: 50px;
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #E75221;
+    margin-bottom: 60px;
+  }
+}
+
+.team {
+  background: #fff;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.team .member img {
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.team .member:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #E75221;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #05202B;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #F9A280F;
+}
+
+.team .member .social {
+  margin-top: 10px;
+}
+
+.team .member .social a {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #E75221;
+}
+
+.team .member .social a:hover {
+  color: #F9A280;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #E75221;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Assistant", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #ef6603;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #bd5102;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
