@@ -98,7 +98,7 @@ if (navigator.geolocation) {
         }
 
         // Browse location Hospital
-        let hospitals= [];
+        let hospitals = [];
         const fetchHospitals = function (latitude, longitude, radius) {
             return new Promise(function (resolve, reject) {
                 resolve(

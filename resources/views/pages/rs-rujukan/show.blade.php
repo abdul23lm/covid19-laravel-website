@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+COVID-19 Website
+@endsection
+
 @section('content')
 <br><br><br>
 <section class="section-show">
