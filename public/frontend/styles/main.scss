@@ -128,6 +128,18 @@ body {
   }
 }
 
+.btn-logout {
+    background-color: #E75221;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px;
+    &:hover {
+      background-color: #F9A280;
+      color: #fff;
+    }
+  }
+
 .section-header {
   margin-top: 50px;
 
@@ -541,3 +553,146 @@ body {
 #footer .credits {
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Login Page
+--------------------------------------------------------------*/
+
+.page-login {
+    height: 100vh;
+  }
+
+  .page-login .btn-login {
+    background-color: #E75221;
+    color: #fff;
+  }
+
+  .page-login .btn-login:hover {
+    background-color: #F9A280;
+    color: fff;
+  }
+
+  .page-login .section-left h1 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #071c4d;
+  }
+
+  .page-login .section-right a {
+    font-family: Assistant;
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 19px;
+    text-align: left;
+    color: #aba6a6;
+  }
+
+/*--------------------------------------------------------------
+# RS Rujukan
+--------------------------------------------------------------*/
+
+  .section-rs {
+    margin-top: 50px;
+
+    .section-rs-heading {
+      h2 {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        color: #E75221;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .section-rs-content{
+        .btn-direction {
+            border-radius: 22px;
+            background-color: #57a0d2;
+            color: #fff;
+            font-size: 18px;
+            &:hover {
+              border-radius: 20px;
+              background-color: #277BB5;
+              color: #fff;
+            }
+          }
+
+        h2 {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        color: #E75221;
+        }
+
+        p {
+        font-size: 18px;
+        }
+    }
+
+  }
+
+  /*--------------------------------------------------------------
+# RS Rujukan - Show
+--------------------------------------------------------------*/
+
+.section-show {
+
+    .card-header {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #E75221;
+        text-align: center;
+    }
+
+    .card-body {
+      h3 {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #E75221;
+      }
+
+      span {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: darken($color: #000000, $amount: 0);
+      }
+      p {
+        font-family: 'Assistant', sans-serif;
+        font-size: 18px;
+        color: darken($color: #000000, $amount: 0);
+      }
+      .direction{
+        font-family: 'Assistant', sans-serif;
+        font-size: 18px;
+        color: darken($color: #000000, $amount: 0);
+
+      }
+    }
+
+  }
+
+
+    /*--------------------------------------------------------------
+# RS Rujukan - Browse
+--------------------------------------------------------------*/
+
+.section-browse {
+
+    .card-header {
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #E75221;
+        text-align: center;
+    }
+
+  }
+

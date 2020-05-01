@@ -14,10 +14,7 @@
           <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav ml-auto mr-3">
               <li class="nav-item mx-md-2">
-                <a href="#" class="nav-link">RS Rujukan</a>
-              </li>
-              <li class="nav-item mx-md-2">
-                <a href="#" class="nav-link">MaskerMap</a>
+                <a href="{{ route('rs-rujukan.index') }}" class="nav-link">RS Rujukan</a>
               </li>
               <li class="nav-item mx-md-2">
                 <a href="#pencegahanCovid" class="nav-link">Pencegahan</a>
@@ -42,6 +39,26 @@
                 Home
               </button>
             </form>
+
+            @auth
+            <!-- Mobile Button -->
+            <form class="form-inline d-sm block d-md-none" action="{{url('logout')}}" method="POST">
+                @csrf
+                <button class="btn btn-logout my-2 my-sm-0 px-4">
+                    Keluar
+                </button>
+            </form>
+
+            <!-- Dekstop Button -->
+            <form class="form-inline my-2 my-lg-0 d-none d-md-block" action="{{url('logout')}}" method="POST">
+                @csrf
+                <button class="btn btn-logout btn-navbar-right my-2 my-sm-0 px-4">
+                    Keluar
+                </button>
+            </form>
+            @endauth
+
+
           </div>
         </nav>
       </div>

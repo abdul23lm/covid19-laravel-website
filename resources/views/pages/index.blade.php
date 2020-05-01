@@ -241,8 +241,8 @@ COVID-19 Website
                 <br />
                 Pengaduan COVID-19
               </h2>
-              <a href="#" class="btn btn-telp-covid px-4 mt-2">
-                Telepon
+              <a href="tel:119" class="btn btn-telp-covid px-4 mt-2">
+                Telepon 119
               </a>
             </div>
             <div class="col-md-5">
@@ -274,11 +274,11 @@ COVID-19 Website
                 <h4>Abdul Latif Munjiat</h4>
                 <span>CEO &amp; Founder Decodev</span>
                 <div class="social">
-                  <a href="https://twitter.com/Abdul_LM"><i class="icofont-twitter"></i></a>
-                  <a href="https://facebook.com/Abdul23LM"><i class="icofont-facebook"></i></a>
-                  <a href="https://www.instagram.com/abdul_lm/"><i class="icofont-instagram"></i></a>
-                  <a href="https://github.com/abdul23lm"><i class="icofont-github"></i></a>
-                  <a href="https://www.linkedin.com/in/abdul23lm/"><i class="icofont-linkedin"></i></a>
+                  <a href="https://twitter.com/Abdul_LM" target="_blank" ><i class="icofont-twitter"></i></a>
+                  <a href="https://facebook.com/Abdul23LM" target="_blank" ><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/abdul_lm/" target="_blank" ><i class="icofont-instagram"></i></a>
+                  <a href="https://github.com/abdul23lm" target="_blank" ><i class="icofont-github"></i></a>
+                  <a href="https://www.linkedin.com/in/abdul23lm/" target="_blank" ><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -290,11 +290,11 @@ COVID-19 Website
                 <h4>Abbi Satria</h4>
                 <span>Owner of BFAR Project</span>
                 <div class="social">
-                  <a href="https://twitter.com/abbi_satria"><i class="icofont-twitter"></i></a>
-                  <a href="https://facebook.com/abbi.satria.7"><i class="icofont-facebook"></i></a>
-                  <a href="https://www.instagram.com/abbisatria/"><i class="icofont-instagram"></i></a>
-                  <a href="https://github.com/abbisatria"><i class="icofont-github"></i></a>
-                  <a href="https://www.linkedin.com/in/abbi-satria-5595a3132/"><i class="icofont-linkedin"></i></a>
+                  <a href="https://twitter.com/abbi_satria" target="_blank" ><i class="icofont-twitter"></i></a>
+                  <a href="https://facebook.com/abbi.satria.7" target="_blank" ><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/abbisatria/" target="_blank" ><i class="icofont-instagram"></i></a>
+                  <a href="https://github.com/abbisatria" target="_blank" ><i class="icofont-github"></i></a>
+                  <a href="https://www.linkedin.com/in/abbi-satria-5595a3132/" target="_blank" ><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -306,11 +306,11 @@ COVID-19 Website
                 <h4>Ridho</h4>
                 <span>AI Engineer</span>
                 <div class="social">
-                  <a href="https://twitter.com/ridhomujizat"><i class="icofont-twitter"></i></a>
-                  <a href="https://facebook.com/ridhomujizat"><i class="icofont-facebook"></i></a>
-                  <a href="https://www.instagram.com/ridhomujizat/"><i class="icofont-instagram"></i></a>
-                  <a href="https://github.com/ridhomujizat"><i class="icofont-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ridho-mujizat-07800b167/"><i class="icofont-linkedin"></i></a>
+                  <a href="https://twitter.com/ridhomujizat" target="_blank" ><i class="icofont-twitter"></i></a>
+                  <a href="https://facebook.com/ridhomujizat" target="_blank" ><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/ridhomujizat/" target="_blank" ><i class="icofont-instagram"></i></a>
+                  <a href="https://github.com/ridhomujizat" target="_blank" ><i class="icofont-github"></i></a>
+                  <a href="https://www.linkedin.com/in/ridho-mujizat-07800b167/" target="_blank" ><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
