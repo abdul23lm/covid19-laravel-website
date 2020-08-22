@@ -21,18 +21,17 @@ Route::resource('rs-rujukan', 'RSRujukanController');
 Route::get('/browse/rs-rujukan', 'RSRujukanController@browse')->name('rs-rujukan.browse');
 
 Route::get('/', 'GetApiCovid19Controller@index')
-        ->name('index');
+    ->name('index');
 
 Route::prefix('admin')
     ->namespace('Admin')
-    ->middleware(['auth','admin'])
-    ->group(function(){
+    ->middleware(['auth', 'admin'])
+    ->group(function () {
         Route::get('/', 'DashboardController@index')
             ->name('dashboard');
 
-    Route::resource('hospital', 'HospitalController');
-    Route::get('/browse/hospital', 'HospitalController@browse')->name('hospital.browse');
-
+        Route::resource('hospital', 'HospitalController');
+        Route::get('/browse/hospital', 'HospitalController@browse')->name('hospital.browse');
     });
 
 Auth::routes([
@@ -42,6 +41,3 @@ Auth::routes([
 
     'verify' => false, // Email Verification Routes...
 ]);
-
-
-
