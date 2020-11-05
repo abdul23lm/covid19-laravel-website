@@ -17,13 +17,13 @@
                 <a href="{{ route('rs-rujukan.index') }}" class="nav-link">RS Rujukan</a>
               </li>
               <li class="nav-item mx-md-2">
-                <a href="#pencegahanCovid" class="nav-link">Pencegahan</a>
+                <a href="/#pencegahanCovid" class="nav-link">Pencegahan</a>
               </li>
               <li class="nav-item mx-md-2">
-                <a href="#gejala" class="nav-link">Gejala</a>
+                <a href="/#gejala" class="nav-link">Gejala</a>
               </li>
               <li class="nav-item mx-md-2">
-                <a href="#aboutCovid" class="nav-link">About COVID-19</a>
+                <a href="/#aboutCovid" class="nav-link">About COVID-19</a>
               </li>
             </ul>
 

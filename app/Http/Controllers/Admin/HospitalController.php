@@ -136,7 +136,7 @@ class HospitalController extends Controller
         }
 
         foreach ($hospital->photos as $photo) {
-            Storage::delete('public/'.$photo->path);
+            Storage::delete('public/' . $photo->path);
         }
 
         $hospital->delete();
